@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Conestoga\\Semester 3\\Programming Web Technology\\Company_List\\Company_List\\Company_List.csproj": {}
+    "C:\\Users\\divye\\OneDrive\\Documents\\GitHub\\Assignment-03-Continuous-Integration-\\Company_List\\Company_List.csproj": {}
   },
   "projects": {
-    "D:\\Conestoga\\Semester 3\\Programming Web Technology\\Company_List\\Company_List\\Company_List.csproj": {
+    "C:\\Users\\divye\\OneDrive\\Documents\\GitHub\\Assignment-03-Continuous-Integration-\\Company_List\\Company_List.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Conestoga\\Semester 3\\Programming Web Technology\\Company_List\\Company_List\\Company_List.csproj",
+        "projectUniqueName": "C:\\Users\\divye\\OneDrive\\Documents\\GitHub\\Assignment-03-Continuous-Integration-\\Company_List\\Company_List.csproj",
         "projectName": "Company_List",
-        "projectPath": "D:\\Conestoga\\Semester 3\\Programming Web Technology\\Company_List\\Company_List\\Company_List.csproj",
+        "projectPath": "C:\\Users\\divye\\OneDrive\\Documents\\GitHub\\Assignment-03-Continuous-Integration-\\Company_List\\Company_List.csproj",
         "packagesPath": "C:\\Users\\divye\\.nuget\\packages\\",
-        "outputPath": "D:\\Conestoga\\Semester 3\\Programming Web Technology\\Company_List\\Company_List\\obj\\",
+        "outputPath": "C:\\Users\\divye\\OneDrive\\Documents\\GitHub\\Assignment-03-Continuous-Integration-\\Company_List\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
