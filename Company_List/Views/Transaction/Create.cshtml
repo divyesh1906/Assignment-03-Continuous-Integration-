@@ -1,0 +1,55 @@
+﻿@model Company_List.Models.Transaction
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+     
+
+            <div class="form-group">
+                <label asp-for="CompanyID">Company</label>
+                <select class="form-control" asp-for="CompanyID" asp-items="@(new SelectList(ViewBag.Company, "CompanyID", "CompanyName"))">
+                </select>
+            </div>
+
+            <!-- Retrieve list  from the database which are inserted into a ViewBag property called "TransactionTypes" -->
+            <div class="form-group">
+                <label asp-for="TransactionTypeId">TransactionType</label>
+                <select class="form-control" asp-for="TransactionTypeId" asp-items="@(new SelectList(ViewBag.TransactionType, "TransactionTypeId", "TransactionName"))">
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SharePrice" class="control-label"></label>
+                <input asp-for="SharePrice" class="form-control" />
+                <span asp-validation-for="SharePrice" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

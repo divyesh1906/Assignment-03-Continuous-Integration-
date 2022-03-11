@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @{ if (Context.Request.Cookies["newUser"] != null)
+        {
+            <h1 class="display-4">Welcome back @(Context.Request.Cookies["newUser"])!</h1>
+        }
+        else
+        {
+            <h1 class="display-4">Welcome to our site!</h1>
+        }
+    }
+
+    <a asp-controller="Transaction" asp-action="Index" class="btn btn-primary">View List of Transaction</a>
+</div>

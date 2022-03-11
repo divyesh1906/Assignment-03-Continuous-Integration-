@@ -1,0 +1,23 @@
+﻿@model Transaction
+@{
+    ViewBag.Title = "Delete Transaction";
+}
+
+@*Delete File for delete the data of transactionlist*@
+
+
+
+<h2>Confirm Deletion: </h2>
+
+
+    <h3>@Model.Quantity shares @Model.Company.CompanyName of share price: @Model.SharePrice</h3>
+
+
+
+
+<form asp-action="DeleteConfirmed" asp-route-id="@Model.TransactionId">
+    @*<input type="hidden" asp-for="TransactionId" />*@
+
+    <button type="submit" class="btn btn-primary">Delete</button>
+    <a asp-controller="Transaction" asp-action="Index" class="btn btn-primary">Cancel</a>
+</form>
